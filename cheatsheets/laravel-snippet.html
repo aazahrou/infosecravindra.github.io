@@ -1,0 +1,270 @@
+<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width, initial-scale=1, shrink-to-fit=no"><link rel=icon href=https://infosecravindra.github.io/assets/images/favicons/logo.png><link rel=apple-touch-icon sizes=57x57 href=https://infosecravindra.github.io/assets/images/favicons/apple-icon-57x57.png><link rel=apple-touch-icon sizes=60x60 href=https://infosecravindra.github.io/assets/images/favicons/apple-icon-60x60.png><link rel=apple-touch-icon sizes=72x72 href=https://infosecravindra.github.io/assets/images/favicons/apple-icon-72x72.png><link rel=apple-touch-icon sizes=76x76 href=https://infosecravindra.github.io/assets/images/favicons/apple-icon-76x76.png><link rel=apple-touch-icon sizes=114x114 href=https://infosecravindra.github.io/assets/images/favicons/apple-icon-114x114.png><link rel=apple-touch-icon sizes=120x120 href=https://infosecravindra.github.io/assets/images/favicons/apple-icon-120x120.png><link rel=apple-touch-icon sizes=144x144 href=https://infosecravindra.github.io/assets/images/favicons/apple-icon-144x144.png><link rel=apple-touch-icon sizes=152x152 href=https://infosecravindra.github.io/assets/images/favicons/apple-icon-152x152.png><link rel=apple-touch-icon sizes=180x180 href=https://infosecravindra.github.io/assets/images/favicons/apple-icon-180x180.png><link rel=icon type=image/png sizes=192x192 href=https://infosecravindra.github.io/assets/images/favicons/android-icon-192x192.png><link rel=icon type=image/png sizes=32x32 href=https://infosecravindra.github.io/assets/images/favicons/favicon-32x32.png><link rel=icon type=image/png sizes=96x96 href=https://infosecravindra.github.io/assets/images/favicons/favicon-96x96.png><link rel=icon type=image/png sizes=16x16 href=https://infosecravindra.github.io/assets/images/favicons/favicon-16x16.png><link rel=manifest href=https://infosecravindra.github.io/assets/images/favicons/manifest.json><meta name=msapplication-TileColor content=#ffffff><meta name=msapplication-TileImage content=https://infosecravindra.github.io/assets/images/favicons/ms-icon-144x144.png><meta name=theme-color content=#ffffff><meta name=Description content="A collection of Laravel code snipper useful for developers in many situaions from complicated validation to upload multiple files"><meta name=keywords content="php, laravel, 'Ravindra Sisodia'"><meta name=theme-color content=#212121><meta property=og:title content="Laravel Snippets: Ravindra's Blog - Let's Secure Everything"><meta property=og:url content=https://infosecravindra.github.io/cheatsheets/laravel-snippet.html><meta property=og:site_name content="Ravindra's Blog - Let's Secure Everything"><meta property=og:type content=article><meta property=og:description content="A collection of Laravel code snipper useful for developers in many situaions from complicated validation to upload multiple files"><meta property=article:author content="Ravindra Sisodia"><meta property=article:tag content=php><meta property=article:tag content=laravel><meta property=article:published_time content=2019-03-29T09:45:12Z><meta property=og:image content=https://infosecravindra.github.io/assets/images/cheatsheets/laravel-snippet.jpg><meta property=fb:app_id content=222225015360700><meta name=author content="Ravindra Sisodia"><title>Laravel Snippets | Ravindra's Blog</title><meta name=description content="A collection of Laravel code snipper useful for developers in many situaions from complicated validation to upload multiple files"><link rel=stylesheet href=https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css integrity=sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T crossorigin=anonymous><link rel=stylesheet href=https://use.fontawesome.com/releases/v5.6.3/css/all.css integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin=anonymous><link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel=stylesheet><link href=/assets/css/screen.css rel=stylesheet><link href=/assets/css/main.css rel=stylesheet></head><body class=layout-post><nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down"><div class="container pr-0"><a class=navbar-brand href="/"><img src=/assets/images/logo.png alt="Ravindra's Blog"></a><button class=navbar-toggler type=button data-toggle=collapse data-target=#navbarMediumish aria-controls=navbarSupportedContent aria-expanded=false aria-label="Toggle navigation"><span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse" id=navbarMediumish><ul class="navbar-nav ml-auto"><li class=nav-item><a class=nav-link href=/index.html><i class="fas fa-home"></i>&nbsp;&nbsp;Home</a></li><li class=nav-item><a class=nav-link href=/cheatsheets><i class="fas fa-book"></i>&nbsp;&nbsp;Cheatsheets</a></li><li class=nav-item><a class=nav-link href=/portfolio><i class="fas fa-user"></i>&nbsp;&nbsp;Projects</a></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href=# id=navbarDropdown role=button data-toggle=dropdown aria-haspopup=true aria-expanded=false><i class="far fa-grin-hearts"></i>&nbsp;&nbsp;Contact</a><div class=dropdown-menu aria-labelledby=navbarDropdown><a target=_blank class=nav-link href=mailto:rscipher001@gmail.com><i class="fas fa-envelope"></i>&nbsp;&nbsp;Mail</a><div class=dropdown-divider></div><a target=_blank class=nav-link href="https://www.github.com/InfoSecRavindra/"><i class="fab fa-github"></i>&nbsp;&nbsp;GitHub</a> <a target=_blank class=nav-link href="https://www.linkedin.com/in/InfoSecRavindra/"><i class="fab fa-linkedin"></i>&nbsp;&nbsp;LinkedIn</a><div class=dropdown-divider></div><a target=_blank class=nav-link href=https://twitter.com/InfoSecRavindra><i class="fab fa-twitter"></i>&nbsp;&nbsp;Twitter</a></div></li></ul></div></div></nav><div class=site-content><div class=container><div class=mainheading><h1 class=sitetitle>Ravindra's Blog</h1><p class=lead>Let's Secure Everything</p></div><div class=main-content><div class=container><div class=row><div class="col-md-2 pl-0"><div class=share><p>Share</p><ul><li class="ml-1 mr-1"><a target=_blank href="https://facebook.com/sharer.php?u=https://infosecravindra.github.io/cheatsheets/laravel-snippet.html" onclick="window.open(this.href, 'facebook-share');return false;"><i class="fab fa-facebook-f"></i></a></li><li class="ml-1 mr-1"><a target=_blank href="https://twitter.com/intent/tweet?text=Laravel Snippets&url=https://infosecravindra.github.io/cheatsheets/laravel-snippet.html" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"><i class="fab fa-twitter"></i></a></li><li class="ml-1 mr-1"><a target=_blank href="https://plus.google.com/share?url=https://infosecravindra.github.io/cheatsheets/laravel-snippet.html" onclick="window.open(this.href, 'google-share');return false;"><i class="fab fa-google-plus-g"></i></a></li><li class="ml-1 mr-1"><a target=_blank href="https://www.linkedin.com/shareArticle?mini=true&url=https://infosecravindra.github.io/cheatsheets/laravel-snippet.html" onclick="window.open(this.href, 'linkedin-share');return false;"><i class="fab fa-linkedin-in"></i></a></li></ul><div class=sep></div><ul><li><a class="small smoothscroll" href=#disqus_thread></a></li></ul></div></div><div class="col-md-9 flex-first flex-md-unordered"><div class=mainheading><h1 class=posttitle>Laravel Snippets</h1></div><img class="featured-image img-fluid" src=https://infosecravindra.github.io/assets/images/cheatsheets/laravel-snippet.jpg alt="Laravel Snippets"><div class=article-post><h3 id=multi-file-upload-only-square-images>Multi File upload (Only Square Images)</h3><div class="language-html highlighter-rouge"><div class=highlight><pre class=highlight><code><span class=c>&lt;!-- HTML Form --&gt;</span>
+<span class=nt>&lt;input</span> <span class=na>type=</span><span class=s>"file"</span> <span class=na>name=</span><span class=s>"images[]"</span> <span class=na>accept=</span><span class=s>"image/*"</span> <span class=na>multiple</span><span class=nt>&gt;</span>
+</code></pre></div></div><div class="language-php highlighter-rouge"><div class=highlight><pre class=highlight><code><span class=c1>// Form Request Class</span>
+<span class=k>public</span> <span class=k>function</span> <span class=nf>rules</span><span class=p>()</span>
+<span class=p>{</span>
+    <span class=k>return</span> <span class=p>[</span>
+        <span class=c1>// dimensions:ratio=1/1 = Square, remove/change if neccessory</span>
+        <span class=s1>'images.*'</span> <span class=o>=&gt;</span> <span class=s1>'bail|required|image|mimes:jpeg|dimensions:ratio=1/1'</span><span class=p>,</span>
+
+        <span class=c1>// Max 5 file uploads is allowed at once.</span>
+        <span class=s1>'images'</span> <span class=o>=&gt;</span> <span class=s1>'max:5'</span><span class=p>,</span>
+    <span class=p>];</span>
+<span class=p>}</span>
+
+<span class=c1>// Customized error messages</span>
+<span class=k>public</span> <span class=k>function</span> <span class=nf>messages</span><span class=p>()</span>
+<span class=p>{</span>
+    <span class=k>return</span> <span class=p>[</span>
+        <span class=s1>'images.max'</span> <span class=o>=&gt;</span> <span class=s1>'Maximum 5 images are allowed at once.'</span><span class=p>,</span>
+        <span class=s1>'images.*.mimes'</span> <span class=o>=&gt;</span> <span class=s1>'Only jpeg images are allowed.'</span><span class=p>,</span>
+        <span class=s1>'images.*.dimensions'</span> <span class=o>=&gt;</span> <span class=s1>'Only square images are allowed.'</span>
+    <span class=p>];</span>
+<span class=p>}</span>
+</code></pre></div></div><div class="language-php highlighter-rouge"><div class=highlight><pre class=highlight><code><span class=c1>// Controller, May need many changes</span>
+<span class=k>foreach</span> <span class=p>(</span><span class=nv>$request</span><span class=o>-&gt;</span><span class=na>images</span> <span class=k>as</span> <span class=nv>$photo</span><span class=p>)</span> <span class=p>{</span>
+    <span class=nv>$path</span> <span class=o>=</span> <span class=nv>$photo</span><span class=o>-&gt;</span><span class=na>storeAs</span><span class=p>(</span><span class=s1>'products'</span><span class=p>,</span> <span class=nb>md5_file</span><span class=p>(</span><span class=nv>$photo</span><span class=p>)</span> <span class=o>.</span> <span class=s1>'.jpg'</span><span class=p>,</span> <span class=s1>'public'</span><span class=p>);</span>
+    <span class=k>try</span> <span class=p>{</span>
+        <span class=nv>$product</span><span class=o>-&gt;</span><span class=na>photo</span><span class=p>()</span><span class=o>-&gt;</span><span class=na>save</span><span class=p>(</span><span class=k>new</span> <span class=nx>Photo</span><span class=p>([</span>
+            <span class=s1>'path'</span> <span class=o>=&gt;</span> <span class=nv>$path</span><span class=p>,</span>
+        <span class=p>]));</span>
+    <span class=p>}</span> <span class=k>catch</span> <span class=p>(</span><span class=nx>Exception</span> <span class=nv>$exception</span><span class=p>)</span> <span class=p>{</span>
+        <span class=k>continue</span><span class=p>;</span>
+    <span class=p>}</span>
+<span class=p>}</span>
+</code></pre></div></div><h3 id=input-youtube-links>Input YouTube Links</h3><div class="language-php highlighter-rouge"><div class=highlight><pre class=highlight><code><span class=c1>// Validation Rules</span>
+<span class=k>public</span> <span class=k>function</span> <span class=nf>rules</span><span class=p>()</span>
+<span class=p>{</span>
+  <span class=k>return</span> <span class=p>[</span>
+      <span class=s1>'link'</span> <span class=o>=&gt;</span> <span class=s1>'required|unique:product_videos,link'</span><span class=p>,</span>
+  <span class=p>];</span>
+<span class=p>}</span>
+
+<span class=c1>// Extract ID from URL</span>
+<span class=k>protected</span> <span class=k>function</span> <span class=nf>prepareForValidation</span><span class=p>()</span>
+<span class=p>{</span>
+  <span class=nv>$this</span><span class=o>-&gt;</span><span class=na>merge</span><span class=p>([</span>
+      <span class=s1>'link'</span> <span class=o>=&gt;</span> <span class=nv>$this</span><span class=o>-&gt;</span><span class=na>extractYouTubeVideoId</span><span class=p>(</span><span class=nv>$this</span><span class=o>-&gt;</span><span class=na>link</span><span class=p>),</span>
+  <span class=p>]);</span>
+<span class=p>}</span>
+
+<span class=c1>// Custom Validation Messages</span>
+<span class=k>public</span> <span class=k>function</span> <span class=nf>messages</span><span class=p>()</span>
+<span class=p>{</span>
+    <span class=k>return</span> <span class=p>[</span>
+        <span class=s1>'link.required'</span> <span class=o>=&gt;</span> <span class=s1>'Invalid link'</span>
+    <span class=p>];</span>
+<span class=p>}</span>
+
+<span class=c1>// Extract ID from URL</span>
+<span class=k>private</span> <span class=k>function</span> <span class=nf>extractYouTubeVideoId</span><span class=p>(</span><span class=nv>$link</span><span class=p>)</span>
+<span class=p>{</span>
+    <span class=k>try</span> <span class=p>{</span>
+        <span class=c1>// For videos like http://www.youtube.com/watch?v=...</span>
+        <span class=nv>$video_id</span> <span class=o>=</span> <span class=nb>explode</span><span class=p>(</span><span class=s2>"?v="</span><span class=p>,</span> <span class=nv>$link</span><span class=p>);</span>
+
+        <span class=c1>// For videos like http://www.youtube.com/watch/v/..</span>
+        <span class=k>if</span> <span class=p>(</span><span class=k>empty</span><span class=p>(</span><span class=nv>$video_id</span><span class=p>[</span><span class=mi>1</span><span class=p>]))</span> <span class=p>{</span>
+            <span class=nv>$video_id</span> <span class=o>=</span> <span class=nb>explode</span><span class=p>(</span><span class=s2>"/v/"</span><span class=p>,</span> <span class=nv>$link</span><span class=p>);</span>
+        <span class=p>}</span>
+
+        <span class=c1>// Deleting any other params</span>
+        <span class=nv>$video_id</span> <span class=o>=</span> <span class=nb>explode</span><span class=p>(</span><span class=s2>"&amp;"</span><span class=p>,</span> <span class=nv>$video_id</span><span class=p>[</span><span class=mi>1</span><span class=p>]);</span>
+        <span class=nv>$video_id</span> <span class=o>=</span> <span class=nv>$video_id</span><span class=p>[</span><span class=mi>0</span><span class=p>];</span>
+        <span class=k>return</span> <span class=nv>$video_id</span><span class=p>;</span>
+    <span class=p>}</span> <span class=k>catch</span> <span class=p>(</span><span class=nx>\Exception</span> <span class=nv>$exception</span><span class=p>)</span> <span class=p>{</span>
+        <span class=k>return</span> <span class=kc>null</span><span class=p>;</span>
+    <span class=p>}</span>
+<span class=p>}</span>
+</code></pre></div></div><h3 id=csv-to-array>CSV to Array</h3><div class="language-html highlighter-rouge"><div class=highlight><pre class=highlight><code><span class=nt>&lt;input</span> <span class=na>class=</span><span class=s>"form-control"</span> <span class=na>name=</span><span class=s>"value"</span> <span class=na>type=</span><span class=s>"text"</span> <span class=na>required</span><span class=nt>&gt;</span>
+</code></pre></div></div><div class="language-php highlighter-rouge"><div class=highlight><pre class=highlight><code><span class=k>public</span> <span class=k>function</span> <span class=nf>rules</span><span class=p>()</span>
+<span class=p>{</span>
+    <span class=k>return</span> <span class=p>[</span>
+        <span class=s1>'tags'</span> <span class=o>=&gt;</span> <span class=s1>'required|array'</span><span class=p>,</span>
+    <span class=p>];</span>
+<span class=p>}</span>
+
+<span class=k>protected</span> <span class=k>function</span> <span class=nf>prepareForValidation</span><span class=p>()</span>
+<span class=p>{</span>
+    <span class=nv>$this</span><span class=o>-&gt;</span><span class=na>merge</span><span class=p>([</span>
+        <span class=s1>'tags'</span> <span class=o>=&gt;</span> <span class=nb>array_map</span><span class=p>(</span><span class=s1>'ucfirst'</span><span class=p>,</span> <span class=nb>array_map</span><span class=p>(</span><span class=s1>'trim'</span><span class=p>,</span> <span class=nb>explode</span><span class=p>(</span><span class=s1>','</span><span class=p>,</span> <span class=nv>$this</span><span class=o>-&gt;</span><span class=na>value</span><span class=p>))),</span>
+    <span class=p>]);</span>
+<span class=p>}</span>
+</code></pre></div></div><div class="language-php highlighter-rouge"><div class=highlight><pre class=highlight><code><span class=c1>// Controller</span>
+<span class=k>foreach</span> <span class=p>(</span><span class=nv>$request</span><span class=o>-&gt;</span><span class=na>tags</span> <span class=k>as</span> <span class=nv>$value</span><span class=p>)</span> <span class=p>{</span>
+    <span class=k>try</span> <span class=p>{</span>
+        <span class=nv>$product</span><span class=o>-&gt;</span><span class=na>attribute</span><span class=p>()</span><span class=o>-&gt;</span><span class=na>save</span><span class=p>(</span><span class=k>new</span> <span class=nx>ProductAttribute</span><span class=p>([</span>
+            <span class=s1>'name'</span> <span class=o>=&gt;</span> <span class=nv>$request</span><span class=o>-&gt;</span><span class=na>name</span><span class=p>,</span>
+            <span class=s1>'value'</span> <span class=o>=&gt;</span> <span class=nv>$value</span><span class=p>,</span>
+            <span class=s1>'price'</span> <span class=o>=&gt;</span> <span class=nv>$request</span><span class=o>-&gt;</span><span class=na>price</span><span class=p>,</span>
+        <span class=p>]));</span>
+    <span class=p>}</span> <span class=k>catch</span> <span class=p>(</span><span class=nx>Exception</span> <span class=nv>$exception</span><span class=p>)</span> <span class=p>{</span>
+        <span class=k>continue</span><span class=p>;</span>
+    <span class=p>}</span>
+<span class=p>}</span>
+</code></pre></div></div><h3 id=bootstrap-form-boilerplate>Bootstrap Form Boilerplate</h3><div class="language-html highlighter-rouge"><div class=highlight><pre class=highlight><code><span class=nt>&lt;div</span> <span class=na>class=</span><span class=s>"form-group row"</span><span class=nt>&gt;</span>
+    <span class=nt>&lt;label</span> <span class=na>for=</span><span class=s>"email"</span> <span class=na>class=</span><span class=s>"col-sm-4 col-form-label text-md-right"</span><span class=nt>&gt;</span>E-Mail Address<span class=nt>&lt;/label&gt;</span>
+
+    <span class=nt>&lt;div</span> <span class=na>class=</span><span class=s>"col-md-6"</span><span class=nt>&gt;</span>
+        <span class=nt>&lt;input</span> <span class=na>id=</span><span class=s>"email"</span> <span class=na>type=</span><span class=s>"email"</span> <span class=na>name=</span><span class=s>"email"</span> <span class=na>required</span> <span class=na>autofocus</span>
+        <span class=na>class=</span><span class=s>"form-control{{ $errors-&gt;has('email')? ' is-invalid':'' }}"</span>
+        <span class=na>value=</span><span class=s>"{{ old('email') }}"</span><span class=nt>&gt;</span>
+
+        @if ($errors-&gt;has('email'))
+            <span class=nt>&lt;span</span> <span class=na>class=</span><span class=s>"invalid-feedback"</span> <span class=na>role=</span><span class=s>"alert"</span><span class=nt>&gt;</span>
+                <span class=nt>&lt;strong&gt;</span>{{ $errors-&gt;first('email') }}<span class=nt>&lt;/strong&gt;</span>
+            <span class=nt>&lt;/span&gt;</span>
+        @endif
+    <span class=nt>&lt;/div&gt;</span>
+<span class=nt>&lt;/div&gt;</span>
+
+</code></pre></div></div><h3 id=form-request-boilerplate>Form Request Boilerplate</h3><div class="language-php highlighter-rouge"><div class=highlight><pre class=highlight><code>
+<span class=k>use</span> <span class=nx>Illuminate\Validation\Rule</span><span class=p>;</span>
+
+<span class=k>public</span> <span class=k>function</span> <span class=nf>rules</span><span class=p>()</span>
+<span class=p>{</span>
+    <span class=k>return</span> <span class=p>[</span>
+        <span class=s1>'type'</span> <span class=o>=&gt;</span> <span class=p>[</span><span class=s1>'required'</span><span class=p>,</span> <span class=nx>Rule</span><span class=o>::</span><span class=na>in</span><span class=p>([</span><span class=s1>'Home'</span><span class=p>,</span> <span class=s1>'Office'</span><span class=p>])],</span>
+        <span class=s1>'line1'</span> <span class=o>=&gt;</span> <span class=s1>'required|string|max:256'</span><span class=p>,</span>
+        <span class=s1>'line2'</span> <span class=o>=&gt;</span> <span class=s1>'required|string|max:256'</span><span class=p>,</span>
+        <span class=s1>'landmark'</span> <span class=o>=&gt;</span> <span class=s1>'nullable|string|max:128'</span><span class=p>,</span>
+        <span class=s1>'city'</span> <span class=o>=&gt;</span> <span class=s1>'required|string|max:64'</span><span class=p>,</span>
+        <span class=s1>'state'</span> <span class=o>=&gt;</span> <span class=s1>'required|string|max:64'</span><span class=p>,</span>
+        <span class=s1>'pin'</span> <span class=o>=&gt;</span> <span class=s1>'required|digits:6|max:64'</span>
+    <span class=p>];</span>
+<span class=p>}</span>
+</code></pre></div></div><h3 id=controller-boilerplate>Controller Boilerplate</h3><div class="language-php highlighter-rouge"><div class=highlight><pre class=highlight><code>
+<span class=k>public</span> <span class=k>function</span> <span class=nf>__construct</span><span class=p>()</span>
+<span class=p>{</span>
+    <span class=nv>$this</span><span class=o>-&gt;</span><span class=na>middleware</span><span class=p>(</span><span class=s1>'active'</span><span class=p>);</span>
+<span class=p>}</span>
+
+<span class=k>public</span> <span class=k>function</span> <span class=nf>index</span><span class=p>()</span>
+<span class=p>{</span>
+    <span class=nv>$addresses</span> <span class=o>=</span> <span class=nx>auth</span><span class=p>()</span><span class=o>-&gt;</span><span class=na>user</span><span class=p>()</span><span class=o>-&gt;</span><span class=na>address</span><span class=p>;</span>
+    <span class=k>return</span> <span class=nx>view</span><span class=p>(</span><span class=s1>'address.index'</span><span class=p>,</span> <span class=nb>compact</span><span class=p>(</span><span class=s1>'addresses'</span><span class=p>));</span>
+<span class=p>}</span>
+
+<span class=k>public</span> <span class=k>function</span> <span class=nf>create</span><span class=p>()</span>
+<span class=p>{</span>
+    <span class=k>return</span> <span class=nx>view</span><span class=p>(</span><span class=s1>'address.create'</span><span class=p>);</span>
+<span class=p>}</span>
+
+<span class=k>public</span> <span class=k>function</span> <span class=nf>store</span><span class=p>(</span><span class=nx>AddressRequest</span> <span class=nv>$request</span><span class=p>)</span>
+<span class=p>{</span>
+    <span class=nx>auth</span><span class=p>()</span><span class=o>-&gt;</span><span class=na>user</span><span class=p>()</span><span class=o>-&gt;</span><span class=na>address</span><span class=p>()</span><span class=o>-&gt;</span><span class=na>save</span><span class=p>(</span><span class=k>new</span> <span class=nx>Address</span><span class=p>(</span><span class=nv>$request</span><span class=o>-&gt;</span><span class=na>validated</span><span class=p>()));</span>
+    <span class=k>return</span> <span class=nx>redirect</span><span class=p>(</span><span class=s1>'/address'</span><span class=p>)</span><span class=o>-&gt;</span><span class=na>with</span><span class=p>(</span><span class=s1>'message'</span><span class=p>,</span> <span class=s1>'Address Added Successfully'</span><span class=p>);</span>
+<span class=p>}</span>
+
+<span class=k>public</span> <span class=k>function</span> <span class=nf>show</span><span class=p>(</span><span class=nx>Address</span> <span class=nv>$address</span><span class=p>)</span>
+<span class=p>{</span>
+    <span class=nx>abort</span><span class=p>(</span><span class=mi>403</span><span class=p>);</span>
+<span class=p>}</span>
+
+<span class=k>public</span> <span class=k>function</span> <span class=nf>edit</span><span class=p>(</span><span class=nx>Address</span> <span class=nv>$address</span><span class=p>)</span>
+<span class=p>{</span>
+    <span class=k>if</span> <span class=p>(</span><span class=nx>auth</span><span class=p>()</span><span class=o>-&gt;</span><span class=na>id</span><span class=p>()</span> <span class=o>===</span> <span class=nv>$address</span><span class=o>-&gt;</span><span class=na>user_id</span><span class=p>)</span> <span class=p>{</span>
+        <span class=k>return</span> <span class=nx>view</span><span class=p>(</span><span class=s1>'address.edit'</span><span class=p>,</span> <span class=nb>compact</span><span class=p>(</span><span class=s1>'address'</span><span class=p>));</span>
+    <span class=p>}</span>
+<span class=p>}</span>
+
+<span class=k>public</span> <span class=k>function</span> <span class=nf>update</span><span class=p>(</span><span class=nx>AddressRequest</span> <span class=nv>$request</span><span class=p>,</span> <span class=nx>Address</span> <span class=nv>$address</span><span class=p>)</span>
+<span class=p>{</span>
+    <span class=k>if</span> <span class=p>(</span><span class=nx>auth</span><span class=p>()</span><span class=o>-&gt;</span><span class=na>id</span><span class=p>()</span> <span class=o>===</span> <span class=nv>$address</span><span class=o>-&gt;</span><span class=na>user_id</span><span class=p>)</span> <span class=p>{</span>
+        <span class=nv>$address</span><span class=o>-&gt;</span><span class=na>update</span><span class=p>(</span><span class=nv>$request</span><span class=o>-&gt;</span><span class=na>validated</span><span class=p>());</span>
+        <span class=k>return</span> <span class=nx>redirect</span><span class=p>(</span><span class=s1>'/address'</span><span class=p>)</span><span class=o>-&gt;</span><span class=na>with</span><span class=p>(</span><span class=s1>'message'</span><span class=p>,</span> <span class=s1>'Address Updated Successfully'</span><span class=p>);</span>
+    <span class=p>}</span>
+<span class=p>}</span>
+
+<span class=k>public</span> <span class=k>function</span> <span class=nf>destroy</span><span class=p>(</span><span class=nx>Address</span> <span class=nv>$address</span><span class=p>)</span>
+<span class=p>{</span>
+    <span class=k>if</span> <span class=p>(</span><span class=nb>count</span><span class=p>(</span><span class=nx>auth</span><span class=p>()</span><span class=o>-&gt;</span><span class=na>user</span><span class=p>()</span><span class=o>-&gt;</span><span class=na>address</span><span class=p>)</span> <span class=o>&lt;=</span> <span class=mi>1</span><span class=p>)</span> <span class=p>{</span>
+        <span class=k>return</span> <span class=nx>redirect</span><span class=p>(</span><span class=s1>'/address'</span><span class=p>)</span><span class=o>-&gt;</span><span class=na>with</span><span class=p>(</span><span class=s1>'error'</span><span class=p>,</span> <span class=s1>'At least one address is required'</span><span class=p>);</span>
+    <span class=p>}</span>
+
+    <span class=k>if</span> <span class=p>(</span><span class=nx>auth</span><span class=p>()</span><span class=o>-&gt;</span><span class=na>id</span><span class=p>()</span> <span class=o>===</span> <span class=nv>$address</span><span class=o>-&gt;</span><span class=na>user_id</span><span class=p>)</span> <span class=p>{</span>
+        <span class=nv>$address</span><span class=o>-&gt;</span><span class=na>delete</span><span class=p>();</span>
+        <span class=k>return</span> <span class=nx>redirect</span><span class=p>(</span><span class=s1>'/address'</span><span class=p>)</span><span class=o>-&gt;</span><span class=na>with</span><span class=p>(</span><span class=s1>'message'</span><span class=p>,</span> <span class=s1>'Address Deleted Successfully'</span><span class=p>);</span>
+    <span class=p>}</span>
+<span class=p>}</span>
+</code></pre></div></div><h3 id=validation-boilerplate>Validation Boilerplate</h3><div class="language-php highlighter-rouge"><div class=highlight><pre class=highlight><code>
+<span class=c1>// Strings</span>
+<span class=s1>'string'</span> <span class=o>=&gt;</span> <span class=s1>'required|string|max:256'</span><span class=p>,</span>
+<span class=s1>'boolean'</span> <span class=o>=&gt;</span> <span class=s1>'required|boolean'</span><span class=p>,</span>
+
+<span class=c1>// 10 Digit mobile number</span>
+<span class=s1>'mobile'</span> <span class=o>=&gt;</span> <span class=s1>'required|digits:10|unique:users'</span><span class=p>,</span>
+
+<span class=c1>// Input should be Home or Office</span>
+<span class=s1>'inThis'</span> <span class=o>=&gt;</span> <span class=p>[</span><span class=s1>'required'</span><span class=p>,</span> <span class=nx>Rule</span><span class=o>::</span><span class=na>in</span><span class=p>([</span><span class=s1>'Home'</span><span class=p>,</span> <span class=s1>'Office'</span><span class=p>])],</span>
+
+<span class=c1>// Should exists in categories table in id column</span>
+<span class=s1>'parent'</span> <span class=o>=&gt;</span> <span class=s1>'integer|exists:categories,id'</span><span class=p>,</span>
+
+<span class=c1>// Should be an array, used with CSV input, check perpareForValidation for more info.</span>
+<span class=s1>'value'</span> <span class=o>=&gt;</span> <span class=s1>'required|array'</span><span class=p>,</span>
+
+<span class=c1>// Multifile upload</span>
+<span class=s1>'images.*'</span> <span class=o>=&gt;</span> <span class=s1>'required|image|mimes:jpeg|dimensions:ratio=1/1'</span><span class=p>,</span>
+
+<span class=c1>// Multifile upload limit</span>
+<span class=s1>'images'</span> <span class=o>=&gt;</span> <span class=s1>'max:5'</span><span class=p>,</span>
+</code></pre></div></div><h3 id=error-file-boilerplate>Error File Boilerplate</h3><div class="language-html highlighter-rouge"><div class=highlight><pre class=highlight><code>@if ($flash = session('message'))
+    <span class=nt>&lt;li</span> <span class=na>class=</span><span class=s>"list-group-item list-group-item-success"</span> <span class=na>role=</span><span class=s>"alert"</span><span class=nt>&gt;</span>{{ $flash }}<span class=nt>&lt;/li&gt;</span>
+@endif
+
+@if ($flash = session('error'))
+    <span class=nt>&lt;li</span> <span class=na>class=</span><span class=s>"list-group-item list-group-item-danger"</span> <span class=na>role=</span><span class=s>"alert"</span><span class=nt>&gt;</span>{{ $flash }}<span class=nt>&lt;/li&gt;</span>
+@endif
+
+@if ($errors-&gt;any())
+    <span class=nt>&lt;ul</span> <span class=na>class=</span><span class=s>"list-group"</span><span class=nt>&gt;</span>
+        @foreach ($errors-&gt;all() as $err)
+            <span class=nt>&lt;li</span> <span class=na>class=</span><span class=s>"list-group-item list-group-item-danger"</span> <span class=na>role=</span><span class=s>"alert"</span><span class=nt>&gt;</span>{{ $err}}<span class=nt>&lt;/li&gt;</span>
+        @endforeach
+    <span class=nt>&lt;/ul&gt;</span>
+@endif
+</code></pre></div></div><h3 id=bootstrap-boilerplate>Bootstrap Boilerplate</h3><div class="language-html highlighter-rouge"><div class=highlight><pre class=highlight><code><span class=c>&lt;!-- layouts.master --&gt;</span>
+<span class=cp>&lt;!DOCTYPE html&gt;</span>
+<span class=nt>&lt;html</span> <span class=na>lang=</span><span class=s>"en_US"</span><span class=nt>&gt;</span>
+<span class=nt>&lt;head&gt;</span>
+    <span class=nt>&lt;meta</span> <span class=na>charset=</span><span class=s>"utf-8"</span><span class=nt>&gt;</span>
+    <span class=nt>&lt;meta</span> <span class=na>name=</span><span class=s>"viewport"</span> <span class=na>content=</span><span class=s>"width=device-width, initial-scale=1"</span><span class=nt>&gt;</span>
+
+    <span class=nt>&lt;meta</span> <span class=na>name=</span><span class=s>"csrf-token"</span> <span class=na>content=</span><span class=s>"@csrf"</span><span class=nt>&gt;</span>
+    <span class=nt>&lt;title&gt;</span>@yield('title') - {{ config('app.name', 'Laravel') }}<span class=nt>&lt;/title&gt;</span>
+    @include('layouts.stylesheets')
+    @yield('style')
+<span class=nt>&lt;/head&gt;</span>
+<span class=nt>&lt;body&gt;</span>
+    @yield('content')
+    @include('layouts.scripts')
+    @yield('script')
+<span class=nt>&lt;/body&gt;</span>
+<span class=nt>&lt;/html&gt;</span>
+</code></pre></div></div><div class="language-html highlighter-rouge"><div class=highlight><pre class=highlight><code><span class=c>&lt;!-- stylesheets.blade.php --&gt;</span>
+<span class=nt>&lt;link</span> <span class=na>rel=</span><span class=s>"stylesheet"</span> <span class=na>href=</span><span class=s>"https://use.fontawesome.com/releases/v5.7.0/css/all.css"</span><span class=nt>&gt;</span>
+<span class=nt>&lt;link</span> <span class=na>href=</span><span class=s>"https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css"</span> <span class=na>rel=</span><span class=s>"stylesheet"</span><span class=nt>&gt;</span>
+<span class=nt>&lt;link</span> <span class=na>href=</span><span class=s>"{{ asset('css/app.css') }}"</span> <span class=na>rel=</span><span class=s>"stylesheet"</span><span class=nt>&gt;</span>
+</code></pre></div></div><div class="language-html highlighter-rouge"><div class=highlight><pre class=highlight><code><span class=c>&lt;!-- scripts.blade.php --&gt;</span>
+<span class=nt>&lt;script </span><span class=na>type=</span><span class=s>"text/javascript"</span> <span class=na>src=</span><span class=s>"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"</span><span class=nt>&gt;&lt;/script&gt;</span>
+<span class=nt>&lt;script </span><span class=na>type=</span><span class=s>"text/javascript"</span> <span class=na>src=</span><span class=s>"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"</span><span class=nt>&gt;&lt;/script&gt;</span>
+<span class=nt>&lt;script </span><span class=na>type=</span><span class=s>"text/javascript"</span> <span class=na>src=</span><span class=s>"https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"</span><span class=nt>&gt;&lt;/script&gt;</span>
+<span class=nt>&lt;script </span><span class=na>src=</span><span class=s>"{{ asset('js/app.js') }}"</span><span class=nt>&gt;&lt;/script&gt;</span>
+</code></pre></div></div><h3 id=midlleware-boilerplate>Midlleware Boilerplate</h3><div class="language-php highlighter-rouge"><div class=highlight><pre class=highlight><code><span class=k>public</span> <span class=k>function</span> <span class=nf>handle</span><span class=p>(</span><span class=nv>$request</span><span class=p>,</span> <span class=nx>Closure</span> <span class=nv>$next</span><span class=p>)</span>
+<span class=p>{</span>
+    <span class=k>if</span> <span class=p>(</span><span class=o>!</span><span class=nv>$request</span><span class=o>-&gt;</span><span class=na>user</span><span class=p>()</span><span class=o>-&gt;</span><span class=na>isAdmin</span><span class=p>())</span> <span class=p>{</span>
+        <span class=nx>abort</span><span class=p>(</span><span class=mi>403</span><span class=p>);</span>
+    <span class=p>}</span>
+
+    <span class=k>return</span> <span class=nv>$next</span><span class=p>(</span><span class=nv>$request</span><span class=p>);</span>
+<span class=p>}</span>
+</code></pre></div></div><h3 id=return-data-with-json-header>Return data with JSON header</h3><div class="language-php highlighter-rouge"><div class=highlight><pre class=highlight><code><span class=c1># Web.php</span>
+<span class=nx>Route</span><span class=o>::</span><span class=na>get</span><span class=p>(</span><span class=s1>'/who'</span><span class=p>,</span> <span class=k>function</span><span class=p>()</span> <span class=p>{</span>
+    <span class=nv>$response</span> <span class=o>=</span> <span class=k>new</span> <span class=k>stdClass</span><span class=p>();</span>
+    <span class=nv>$response</span><span class=o>-&gt;</span><span class=na>status</span> <span class=o>=</span> <span class=s2>"failed"</span><span class=p>;</span>
+    <span class=nv>$response</span><span class=o>-&gt;</span><span class=na>message</span> <span class=o>=</span> <span class=s2>"Something went wrong"</span><span class=p>;</span>
+    <span class=k>return</span> <span class=nx>response</span><span class=p>(</span> <span class=nb>json_encode</span><span class=p>(</span><span class=nv>$response</span><span class=p>),</span> <span class=mi>200</span><span class=p>)</span>
+    <span class=o>-&gt;</span><span class=na>header</span><span class=p>(</span><span class=s1>'Content-Type'</span><span class=p>,</span> <span class=s1>'application/json'</span><span class=p>);</span>
+<span class=p>});</span>
+</code></pre></div></div><h3 id=open-graph-boilerplate>Open Graph Boilerplate</h3><p>Working on it.</p></div><hr><p><span>Original:&nbsp;<time datetime=2019-01-01>01 Jan 2019</time></span> <span class="float-right clearfix">Updated:&nbsp;<time datetime=2019-03-29 itemprop=dateModified>Mar 29, 2019</time></span></p><hr><div class=after-post-tags><ul class=tags><li><a href=/archives/cheatsheets_archive.html#laravel class=post-tag>laravel</a></li><li><a href=/archives/cheatsheets_archive.html#php class=post-tag>php</a></li></ul></div><div class="row PageNavigation d-flex justify-content-between font-weight-bold"><a class="prev d-block col-md-6" href=https://infosecravindra.github.io/cheatsheets/laravel-cheatsheet.html>&laquo; Laravel Cheatsheet</a> <a class="next d-block col-md-6 text-lg-right" href=https://infosecravindra.github.io/cheatsheets/linux-commands-cheatsheet.html>Linux Commands Cheatsheet &raquo;</a><div class=clearfix></div></div></div></div></div><div class=container><div id=comments class="row justify-content-center mb-5"><div class=col-md-8><div id=disqus_thread></div><script src=/assets/js/disqus.js></script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript></div></div></div></div></div><footer class=footer><div class=container><div class=row><div class="col-md-6 col-sm-6 text-center text-lg-left"><strong>Non sense free</strong> technical blog.</div><div class="col-md-6 col-sm-6 text-center text-lg-right"><a target=_blank href=https://www.wowthemes.net>Mediumish Theme</a> by WowThemes.net</div></div></div></footer></div><script src=https://code.jquery.com/jquery-3.3.1.min.js integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin=anonymous></script><script src=https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js integrity=sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM crossorigin=anonymous></script><script src=/assets/js/ie10-viewport-bug-workaround.js></script><script src=/assets/js/mediumish.js></script><script id=dsq-count-scr src=//infosecravindra-github-io.disqus.com/count.js></script></body></html>

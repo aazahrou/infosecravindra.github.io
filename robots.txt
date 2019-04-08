@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://infosecravindra.github.io/sitemap.xml
