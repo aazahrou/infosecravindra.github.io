@@ -1,0 +1,1 @@
+var disqus_config=function(){this.page.url=document.location.toString(),this.page.identifier=document.location.toString()};!function(){var t=document,i=t.createElement("script");i.src="https://infosecravindra-github-io.disqus.com/embed.js",i.setAttribute("data-timestamp",+new Date),(t.head||t.body).appendChild(i)}();
