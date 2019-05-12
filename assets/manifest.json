@@ -5,9 +5,21 @@
     "display": "standalone",
     "background_color": "#fff",
     "description": "Let's secure everything",
-    "icons": [{
-        "src": "/assets/images/logo.png",
-        "sizes": "128x128",
-        "type": "image/png"
-    }]
+    "icons": [
+        {
+            "src": "/assets/images/logo.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/images/logo-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/images/logo-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
 }
