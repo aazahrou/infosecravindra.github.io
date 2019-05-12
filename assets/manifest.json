@@ -8,19 +8,19 @@
     "description": "Let's secure everything",
     "icons": [
         {
-            "src": "/assets/images/logo.png",
+            "src": "/assets/images/logo.webp",
             "sizes": "128x128",
-            "type": "image/png"
+            "type": "image/webp"
         },
         {
-            "src": "/assets/images/logo-192x192.png",
+            "src": "/assets/images/logo-192x192.webp",
             "sizes": "192x192",
-            "type": "image/png"
+            "type": "image/webp"
         },
         {
-            "src": "/assets/images/logo-512x512.png",
+            "src": "/assets/images/logo-512x512.webp",
             "sizes": "512x512",
-            "type": "image/png"
+            "type": "image/webp"
         }
     ]
 }
