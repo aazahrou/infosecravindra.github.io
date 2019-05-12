@@ -20,7 +20,7 @@
         {
             "src": "/assets/images/logo-512x512.png",
             "sizes": "512x512",
-            "type": "image/webp"
+            "type": "image/png"
         }
     ]
 }
