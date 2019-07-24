@@ -2,6 +2,8 @@
 adb list devices <span class=nt>-l</span> <span class=c># Long Output</span>
 </code></pre></div></div><h3 id=enable-wireless-adb-on-a-usb-connected-device>Enable Wireless ADB on a USB Connected Device</h3><div class="highlighter-rouge language-bash"><div class=highlight><pre class=highlight><code>adb tcpip 5555  <span class=c># 5555 is port, can be changed if needed</span>
 </code></pre></div></div><h3 id=adb-connect-using-device-ip>adb connect using device IP</h3><div class="highlighter-rouge language-bash"><div class=highlight><pre class=highlight><code>adb connect 192.168.43.1:5555 <span class=c># 5555 is Port</span>
+</code></pre></div></div><h3 id=list-all-installed-packages>List All Installed Packages</h3><div class="highlighter-rouge language-bash"><div class=highlight><pre class=highlight><code>adb shell cmd package list package
+adb shell cmd package list package <span class=nt>-f</span> <span class=c># Full Information</span>
 </code></pre></div></div><h3 id=remove-bloatware>Remove bloatware</h3><div class="highlighter-rouge language-bash"><div class=highlight><pre class=highlight><code>adb shell pm uninstall <span class=nt>--user</span> 0 <span class=sb>`</span>package.name<span class=sb>`</span>
 <span class=c># Replace package name with your application package name.</span>
 <span class=c># Ex: Package name for WhatsApp: com.whatsapp</span>
