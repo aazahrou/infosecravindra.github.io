@@ -19,7 +19,9 @@ Copy CB0F259B96C06BD7 from output
 </code></pre></div></div><h3 id=undo-everything-after-last-commit>Undo Everything after last commit</h3><div class="highlighter-rouge language-bash"><div class=highlight><pre class=highlight><code>git reset HEAD <span class=nt>--hard</span>
 </code></pre></div></div><h3 id=delete-all-untracked-files>Delete all untracked files</h3><div class="highlighter-rouge language-bash"><div class=highlight><pre class=highlight><code>git clean <span class=nt>-f</span>
 </code></pre></div></div><h3 id=delete-all-untracked-files-and-directories>Delete all untracked files and directories</h3><div class="highlighter-rouge language-bash"><div class=highlight><pre class=highlight><code>git clean <span class=nt>-fd</span>
-</code></pre></div></div><h3 id=git-create-a-branch-and-switch>Git create a branch and switch</h3><div class="highlighter-rouge language-bash"><div class=highlight><pre class=highlight><code>git checkout dev	<span class=c># Create dev branch and switch</span>
+</code></pre></div></div><h3 id=git-create-a-branch-and-switch>Git create a branch and switch</h3><div class="highlighter-rouge language-bash"><div class=highlight><pre class=highlight><code>git checkout <span class=nt>-b</span> dev	<span class=c># Create dev branch and switch</span>
+</code></pre></div></div><h2 id=git-switch-branch>Git Switch Branch</h2><div class="highlighter-rouge language-bash"><div class=highlight><pre class=highlight><code>git checkout branchname
+</code></pre></div></div><h2 id=git-reset-all-tracked-file>Git Reset All Tracked File</h2><div class="highlighter-rouge language-bash"><div class=highlight><pre class=highlight><code>git reset HEAD
 </code></pre></div></div><h3 id=git-stash-and-change-branch-and-come-back-and-unstash>Git stash and change branch and come back and unstash</h3><div class="highlighter-rouge language-bash"><div class=highlight><pre class=highlight><code><span class=c># Assuming you're working on dev branch</span>
 <span class=c># And have to switch to master without losing changes in dev</span>
 git stash				<span class=c># Stashed non commited code</span>
