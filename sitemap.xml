@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://infosecravindra.github.io/cheatsheets/adb-cheetsheet.html</loc>
-<lastmod>2019-05-27T09:52:09+05:30</lastmod>
+<lastmod>2019-07-25T01:00:08+05:30</lastmod>
 </url>
 <url>
 <loc>https://infosecravindra.github.io/cheatsheets/curl-cheatsheet.html</loc>
@@ -13,12 +13,20 @@
 <lastmod>2019-05-12T13:50:16+05:30</lastmod>
 </url>
 <url>
+<loc>https://infosecravindra.github.io/cheatsheets/emmet_cheatsheet.html</loc>
+<lastmod>2019-07-25T01:12:31+05:30</lastmod>
+</url>
+<url>
 <loc>https://infosecravindra.github.io/cheatsheets/firebase_cheatsheet.html</loc>
 <lastmod>2019-05-12T13:50:16+05:30</lastmod>
 </url>
 <url>
 <loc>https://infosecravindra.github.io/cheatsheets/git-cheatsheet.html</loc>
 <lastmod>2019-05-27T09:52:09+05:30</lastmod>
+</url>
+<url>
+<loc>https://infosecravindra.github.io/cheatsheets/htaccess_cheatsheet.html</loc>
+<lastmod>2019-07-25T01:11:12+05:30</lastmod>
 </url>
 <url>
 <loc>https://infosecravindra.github.io/cheatsheets/infosec/attack_cheatsheet.html</loc>
@@ -30,7 +38,7 @@
 </url>
 <url>
 <loc>https://infosecravindra.github.io/cheatsheets/javascript_cheatsheet.html</loc>
-<lastmod>2019-07-25T00:58:30+05:30</lastmod>
+<lastmod>2019-07-25T01:00:08+05:30</lastmod>
 </url>
 <url>
 <loc>https://infosecravindra.github.io/cheatsheets/laravel-cheatsheet.html</loc>
