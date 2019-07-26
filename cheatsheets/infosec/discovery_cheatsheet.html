@@ -25,14 +25,14 @@ copyToClipboard('Hello, World!')
 <span class=nb>cat </span>url | <span class=nb>cut</span> <span class=nt>-d</span><span class=s1>'/'</span> <span class=nt>-f3</span> | <span class=nb>sort</span> | <span class=nb>uniq</span> <span class=o>&gt;</span> Processed_URLs.txt
 </code></pre></div></div><h3 id=retrieve-name-colums-from-cities-json-array-of-objects>Retrieve name colums from cities json array of objects</h3><div class="highlighter-rouge language-json"><div class=highlight><pre class=highlight><code><span class=p>[</span><span class=w>
     </span><span class=p>{</span><span class=w>
-        </span><span class=s2>"id"</span><span class=p>:</span><span class=w> </span><span class=s2>"1"</span><span class=p>,</span><span class=w>
-        </span><span class=s2>"name"</span><span class=p>:</span><span class=w> </span><span class=s2>"Mumbai"</span><span class=p>,</span><span class=w>
-        </span><span class=s2>"state"</span><span class=p>:</span><span class=w> </span><span class=s2>"Maharashtra"</span><span class=w>
+        </span><span class=nl>"id"</span><span class=p>:</span><span class=w> </span><span class=s2>"1"</span><span class=p>,</span><span class=w>
+        </span><span class=nl>"name"</span><span class=p>:</span><span class=w> </span><span class=s2>"Mumbai"</span><span class=p>,</span><span class=w>
+        </span><span class=nl>"state"</span><span class=p>:</span><span class=w> </span><span class=s2>"Maharashtra"</span><span class=w>
     </span><span class=p>},</span><span class=w>
     </span><span class=p>{</span><span class=w>
-        </span><span class=s2>"id"</span><span class=p>:</span><span class=w> </span><span class=s2>"2"</span><span class=p>,</span><span class=w>
-        </span><span class=s2>"name"</span><span class=p>:</span><span class=w> </span><span class=s2>"Delhi"</span><span class=p>,</span><span class=w>
-        </span><span class=s2>"state"</span><span class=p>:</span><span class=w> </span><span class=s2>"Delhi"</span><span class=w>
+        </span><span class=nl>"id"</span><span class=p>:</span><span class=w> </span><span class=s2>"2"</span><span class=p>,</span><span class=w>
+        </span><span class=nl>"name"</span><span class=p>:</span><span class=w> </span><span class=s2>"Delhi"</span><span class=p>,</span><span class=w>
+        </span><span class=nl>"state"</span><span class=p>:</span><span class=w> </span><span class=s2>"Delhi"</span><span class=w>
     </span><span class=p>},</span><span class=w>
 </span><span class=p>]</span><span class=w>
 </span></code></pre></div></div><pre><code class=language-jq>cat cities.json |  jq '.[] | .name' &gt; Cities.txt
