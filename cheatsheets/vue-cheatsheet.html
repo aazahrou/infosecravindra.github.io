@@ -5,13 +5,13 @@ resources\js\components\ExampleComponent.vue
 npm remove popper.js
 npm remove lodash
 npm remove jquery
-</code></pre></div></div><p>Open <code class=highlighter-rouge>webpack.mix.js</code> and remove/comment this line</p><div class="highlighter-rouge language-js"><div class=highlight><pre class=highlight><code><span class=p>.</span><span class=nx>sass</span><span class=p>(</span><span class=dl>'</span><span class=s1>resources/sass/app.scss</span><span class=dl>'</span><span class=p>,</span> <span class=dl>'</span><span class=s1>public/css</span><span class=dl>'</span><span class=p>);</span>
+</code></pre></div></div><p>Open <code class=highlighter-rouge>webpack.mix.js</code> and remove/comment this line</p><div class="highlighter-rouge language-js"><div class=highlight><pre class=highlight><code><span class=p>.</span><span class=nx>sass</span><span class=p>(</span><span class=s1>'resources/sass/app.scss'</span><span class=p>,</span> <span class=s1>'public/css'</span><span class=p>);</span>
 </code></pre></div></div><p>Install stylus globally and in project</p><div class=highlighter-rouge><div class=highlight><pre class=highlight><code>npm install -g stylus
 npm install stylus stylus-loader
 </code></pre></div></div><p>Insatll Vuetify</p><div class="highlighter-rouge language-bash"><div class=highlight><pre class=highlight><code>npm <span class=nb>install </span>vuetify <span class=nt>--save</span>
-</code></pre></div></div><p>Open <code class=highlighter-rouge>resources/js/app.js</code> and add these lines</p><div class="highlighter-rouge language-js"><div class=highlight><pre class=highlight><code><span class=k>import</span> <span class=nx>Vue</span> <span class=k>from</span> <span class=dl>'</span><span class=s1>vue</span><span class=dl>'</span>
-<span class=k>import</span> <span class=nx>Vuetify</span> <span class=k>from</span> <span class=dl>'</span><span class=s1>vuetify</span><span class=dl>'</span>
-<span class=k>import</span> <span class=dl>'</span><span class=s1>vuetify/dist/vuetify.min.css</span><span class=dl>'</span>
+</code></pre></div></div><p>Open <code class=highlighter-rouge>resources/js/app.js</code> and add these lines</p><div class="highlighter-rouge language-js"><div class=highlight><pre class=highlight><code><span class=k>import</span> <span class=nx>Vue</span> <span class=k>from</span> <span class=s1>'vue'</span>
+<span class=k>import</span> <span class=nx>Vuetify</span> <span class=k>from</span> <span class=s1>'vuetify'</span>
+<span class=k>import</span> <span class=s1>'vuetify/dist/vuetify.min.css'</span>
 <span class=nx>Vue</span><span class=p>.</span><span class=nx>use</span><span class=p>(</span><span class=nx>Vuetify</span><span class=p>)</span>
 </code></pre></div></div><p>Add this line to <code class=highlighter-rouge>app.blade.php</code></p><div class="highlighter-rouge language-html"><div class=highlight><pre class=highlight><code><span class=nt>&lt;head&gt;</span>
   <span class=nt>&lt;link</span> <span class=na>href=</span><span class=s>'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons'</span> <span class=na>rel=</span><span class=s>"stylesheet"</span><span class=nt>&gt;</span>

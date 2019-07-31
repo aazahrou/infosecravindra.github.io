@@ -9,46 +9,46 @@
 <span class=kn>import</span> <span class=nn>java.io.IOException</span><span class=o>;</span>
 <span class=kn>import</span> <span class=nn>java.net.InetAddress</span><span class=o>;</span>
 
-<span class=kd>public</span> <span class=kd>class</span> <span class=nc>MainActivity</span> <span class=kd>extends</span> <span class=nc>AppCompatActivity</span> <span class=o>{</span>
+<span class=kd>public</span> <span class=kd>class</span> <span class=nc>MainActivity</span> <span class=kd>extends</span> <span class=n>AppCompatActivity</span> <span class=o>{</span>
 
-    <span class=nc>Boolean</span> <span class=n>isConnected</span> <span class=o>=</span> <span class=kc>false</span><span class=o>,</span>
+    <span class=n>Boolean</span> <span class=n>isConnected</span> <span class=o>=</span> <span class=kc>false</span><span class=o>,</span>
             <span class=n>isWiFi</span> <span class=o>=</span> <span class=kc>false</span><span class=o>,</span>
             <span class=n>isMobile</span> <span class=o>=</span> <span class=kc>false</span><span class=o>;</span>
 
     <span class=nd>@Override</span>
-    <span class=kd>protected</span> <span class=kt>void</span> <span class=nf>onCreate</span><span class=o>(</span><span class=nc>Bundle</span> <span class=n>savedInstanceState</span><span class=o>)</span> <span class=o>{</span>
+    <span class=kd>protected</span> <span class=kt>void</span> <span class=nf>onCreate</span><span class=o>(</span><span class=n>Bundle</span> <span class=n>savedInstanceState</span><span class=o>)</span> <span class=o>{</span>
         <span class=kd>super</span><span class=o>.</span><span class=na>onCreate</span><span class=o>(</span><span class=n>savedInstanceState</span><span class=o>);</span>
-        <span class=n>setContentView</span><span class=o>(</span><span class=no>R</span><span class=o>.</span><span class=na>layout</span><span class=o>.</span><span class=na>activity_main</span><span class=o>);</span>
+        <span class=n>setContentView</span><span class=o>(</span><span class=n>R</span><span class=o>.</span><span class=na>layout</span><span class=o>.</span><span class=na>activity_main</span><span class=o>);</span>
 
         <span class=c1>// https://developer.android.com/training/monitoring-device-state/connectivity-monitoring</span>
-        <span class=nc>ConnectivityManager</span> <span class=n>cm</span> <span class=o>=</span>
-                <span class=o>(</span><span class=nc>ConnectivityManager</span><span class=o>)</span> <span class=k>this</span><span class=o>.</span><span class=na>getSystemService</span><span class=o>(</span><span class=nc>Context</span><span class=o>.</span><span class=na>CONNECTIVITY_SERVICE</span><span class=o>);</span>
+        <span class=n>ConnectivityManager</span> <span class=n>cm</span> <span class=o>=</span>
+                <span class=o>(</span><span class=n>ConnectivityManager</span><span class=o>)</span> <span class=k>this</span><span class=o>.</span><span class=na>getSystemService</span><span class=o>(</span><span class=n>Context</span><span class=o>.</span><span class=na>CONNECTIVITY_SERVICE</span><span class=o>);</span>
 
-        <span class=nc>NetworkInfo</span> <span class=n>activeNetwork</span> <span class=o>=</span> <span class=n>cm</span><span class=o>.</span><span class=na>getActiveNetworkInfo</span><span class=o>();</span>
+        <span class=n>NetworkInfo</span> <span class=n>activeNetwork</span> <span class=o>=</span> <span class=n>cm</span><span class=o>.</span><span class=na>getActiveNetworkInfo</span><span class=o>();</span>
 
         <span class=c1>// True if network is available.</span>
         <span class=k>if</span> <span class=o>(</span><span class=n>activeNetwork</span> <span class=o>!=</span> <span class=kc>null</span><span class=o>)</span> <span class=o>{</span>
 
             <span class=c1>// True if using WiFI</span>
-            <span class=n>isWiFi</span> <span class=o>=</span> <span class=n>activeNetwork</span><span class=o>.</span><span class=na>getType</span><span class=o>()</span> <span class=o>==</span> <span class=nc>ConnectivityManager</span><span class=o>.</span><span class=na>TYPE_WIFI</span><span class=o>;</span>
+            <span class=n>isWiFi</span> <span class=o>=</span> <span class=n>activeNetwork</span><span class=o>.</span><span class=na>getType</span><span class=o>()</span> <span class=o>==</span> <span class=n>ConnectivityManager</span><span class=o>.</span><span class=na>TYPE_WIFI</span><span class=o>;</span>
 
             <span class=c1>// True if using Mobile Data</span>
-            <span class=n>isMobile</span> <span class=o>=</span> <span class=n>activeNetwork</span><span class=o>.</span><span class=na>getType</span><span class=o>()</span> <span class=o>==</span> <span class=nc>ConnectivityManager</span><span class=o>.</span><span class=na>TYPE_MOBILE</span><span class=o>;</span>
+            <span class=n>isMobile</span> <span class=o>=</span> <span class=n>activeNetwork</span><span class=o>.</span><span class=na>getType</span><span class=o>()</span> <span class=o>==</span> <span class=n>ConnectivityManager</span><span class=o>.</span><span class=na>TYPE_MOBILE</span><span class=o>;</span>
 
             <span class=n>isConnected</span> <span class=o>=</span> <span class=n>activeNetwork</span><span class=o>.</span><span class=na>isConnectedOrConnecting</span><span class=o>();</span>
         <span class=o>}</span>
 
         <span class=k>if</span> <span class=o>(</span><span class=n>isConnected</span><span class=o>)</span> <span class=o>{</span>
             <span class=k>if</span> <span class=o>(</span><span class=n>isWiFi</span><span class=o>)</span> <span class=o>{</span>
-                <span class=nc>Toast</span><span class=o>.</span><span class=na>makeText</span><span class=o>(</span><span class=k>this</span><span class=o>,</span> <span class=s>"Yes, WiF"</span><span class=o>,</span> <span class=nc>Toast</span><span class=o>.</span><span class=na>LENGTH_SHORT</span><span class=o>)</span>
+                <span class=n>Toast</span><span class=o>.</span><span class=na>makeText</span><span class=o>(</span><span class=k>this</span><span class=o>,</span> <span class=s>"Yes, WiF"</span><span class=o>,</span> <span class=n>Toast</span><span class=o>.</span><span class=na>LENGTH_SHORT</span><span class=o>)</span>
                         <span class=o>.</span><span class=na>show</span><span class=o>();</span>
 
                 <span class=c1>// ping google server for testing purpose</span>
                 <span class=k>if</span> <span class=o>(</span><span class=n>isConnectedToThisServer</span><span class=o>(</span><span class=s>"www.google.com"</span><span class=o>))</span> <span class=o>{</span>
-                    <span class=nc>Toast</span><span class=o>.</span><span class=na>makeText</span><span class=o>(</span><span class=k>this</span><span class=o>,</span> <span class=s>"Yes, Connected to Google"</span><span class=o>,</span> <span class=nc>Toast</span><span class=o>.</span><span class=na>LENGTH_SHORT</span><span class=o>)</span>
+                    <span class=n>Toast</span><span class=o>.</span><span class=na>makeText</span><span class=o>(</span><span class=k>this</span><span class=o>,</span> <span class=s>"Yes, Connected to Google"</span><span class=o>,</span> <span class=n>Toast</span><span class=o>.</span><span class=na>LENGTH_SHORT</span><span class=o>)</span>
                             <span class=o>.</span><span class=na>show</span><span class=o>();</span>
                 <span class=o>}</span> <span class=k>else</span> <span class=o>{</span>
-                    <span class=nc>Toast</span><span class=o>.</span><span class=na>makeText</span><span class=o>(</span><span class=k>this</span><span class=o>,</span> <span class=s>"No Google Connection"</span><span class=o>,</span> <span class=nc>Toast</span><span class=o>.</span><span class=na>LENGTH_SHORT</span><span class=o>)</span>
+                    <span class=n>Toast</span><span class=o>.</span><span class=na>makeText</span><span class=o>(</span><span class=k>this</span><span class=o>,</span> <span class=s>"No Google Connection"</span><span class=o>,</span> <span class=n>Toast</span><span class=o>.</span><span class=na>LENGTH_SHORT</span><span class=o>)</span>
                             <span class=o>.</span><span class=na>show</span><span class=o>();</span>
                 <span class=o>}</span>
             <span class=o>}</span>
@@ -56,31 +56,31 @@
 
             <span class=k>if</span> <span class=o>(</span><span class=n>isMobile</span><span class=o>)</span> <span class=o>{</span>
 
-                <span class=nc>Toast</span><span class=o>.</span><span class=na>makeText</span><span class=o>(</span><span class=k>this</span><span class=o>,</span> <span class=s>"Yes, Mobile"</span><span class=o>,</span> <span class=nc>Toast</span><span class=o>.</span><span class=na>LENGTH_SHORT</span><span class=o>)</span>
+                <span class=n>Toast</span><span class=o>.</span><span class=na>makeText</span><span class=o>(</span><span class=k>this</span><span class=o>,</span> <span class=s>"Yes, Mobile"</span><span class=o>,</span> <span class=n>Toast</span><span class=o>.</span><span class=na>LENGTH_SHORT</span><span class=o>)</span>
                         <span class=o>.</span><span class=na>show</span><span class=o>();</span>
                 <span class=k>if</span> <span class=o>(</span><span class=n>isConnectedToThisServer</span><span class=o>(</span><span class=s>"www.google.com"</span><span class=o>))</span> <span class=o>{</span>
-                    <span class=nc>Toast</span><span class=o>.</span><span class=na>makeText</span><span class=o>(</span><span class=k>this</span><span class=o>,</span> <span class=s>"Yes, Connected to Google"</span><span class=o>,</span> <span class=nc>Toast</span><span class=o>.</span><span class=na>LENGTH_SHORT</span><span class=o>).</span><span class=na>show</span><span class=o>();</span>
+                    <span class=n>Toast</span><span class=o>.</span><span class=na>makeText</span><span class=o>(</span><span class=k>this</span><span class=o>,</span> <span class=s>"Yes, Connected to Google"</span><span class=o>,</span> <span class=n>Toast</span><span class=o>.</span><span class=na>LENGTH_SHORT</span><span class=o>).</span><span class=na>show</span><span class=o>();</span>
                 <span class=o>}</span> <span class=k>else</span> <span class=o>{</span>
-                    <span class=nc>Toast</span><span class=o>.</span><span class=na>makeText</span><span class=o>(</span><span class=k>this</span><span class=o>,</span> <span class=s>"No Google Connection"</span><span class=o>,</span> <span class=nc>Toast</span><span class=o>.</span><span class=na>LENGTH_SHORT</span><span class=o>).</span><span class=na>show</span><span class=o>();</span>
+                    <span class=n>Toast</span><span class=o>.</span><span class=na>makeText</span><span class=o>(</span><span class=k>this</span><span class=o>,</span> <span class=s>"No Google Connection"</span><span class=o>,</span> <span class=n>Toast</span><span class=o>.</span><span class=na>LENGTH_SHORT</span><span class=o>).</span><span class=na>show</span><span class=o>();</span>
                 <span class=o>}</span>
             <span class=o>}</span>
         <span class=o>}</span> <span class=k>else</span> <span class=o>{</span>
-            <span class=nc>Toast</span><span class=o>.</span><span class=na>makeText</span><span class=o>(</span><span class=k>this</span><span class=o>,</span> <span class=s>"No Network"</span><span class=o>,</span> <span class=nc>Toast</span><span class=o>.</span><span class=na>LENGTH_SHORT</span><span class=o>).</span><span class=na>show</span><span class=o>();</span>
+            <span class=n>Toast</span><span class=o>.</span><span class=na>makeText</span><span class=o>(</span><span class=k>this</span><span class=o>,</span> <span class=s>"No Network"</span><span class=o>,</span> <span class=n>Toast</span><span class=o>.</span><span class=na>LENGTH_SHORT</span><span class=o>).</span><span class=na>show</span><span class=o>();</span>
         <span class=o>}</span>
     <span class=o>}</span>
 
 
     <span class=c1>// Function that uses ping, takes server name or ip as argument.</span>
-    <span class=kd>public</span> <span class=kt>boolean</span> <span class=nf>isConnectedToThisServer</span><span class=o>(</span><span class=nc>String</span> <span class=n>host</span><span class=o>)</span> <span class=o>{</span>
+    <span class=kd>public</span> <span class=kt>boolean</span> <span class=nf>isConnectedToThisServer</span><span class=o>(</span><span class=n>String</span> <span class=n>host</span><span class=o>)</span> <span class=o>{</span>
         <span class=c1>// https://stackoverflow.com/questions/3905358/how-to-ping-external-ip-from-java-android</span>
-        <span class=nc>Runtime</span> <span class=n>runtime</span> <span class=o>=</span> <span class=nc>Runtime</span><span class=o>.</span><span class=na>getRuntime</span><span class=o>();</span>
+        <span class=n>Runtime</span> <span class=n>runtime</span> <span class=o>=</span> <span class=n>Runtime</span><span class=o>.</span><span class=na>getRuntime</span><span class=o>();</span>
         <span class=k>try</span> <span class=o>{</span>
-            <span class=nc>Process</span> <span class=n>ipProcess</span> <span class=o>=</span> <span class=n>runtime</span><span class=o>.</span><span class=na>exec</span><span class=o>(</span><span class=s>"/system/bin/ping -c 1 "</span> <span class=o>+</span> <span class=n>host</span><span class=o>);</span>
+            <span class=n>Process</span> <span class=n>ipProcess</span> <span class=o>=</span> <span class=n>runtime</span><span class=o>.</span><span class=na>exec</span><span class=o>(</span><span class=s>"/system/bin/ping -c 1 "</span> <span class=o>+</span> <span class=n>host</span><span class=o>);</span>
             <span class=kt>int</span> <span class=n>exitValue</span> <span class=o>=</span> <span class=n>ipProcess</span><span class=o>.</span><span class=na>waitFor</span><span class=o>();</span>
             <span class=k>return</span> <span class=o>(</span><span class=n>exitValue</span> <span class=o>==</span> <span class=mi>0</span><span class=o>);</span>
-        <span class=o>}</span> <span class=k>catch</span> <span class=o>(</span><span class=nc>IOException</span> <span class=n>e</span><span class=o>)</span> <span class=o>{</span>
+        <span class=o>}</span> <span class=k>catch</span> <span class=o>(</span><span class=n>IOException</span> <span class=n>e</span><span class=o>)</span> <span class=o>{</span>
             <span class=n>e</span><span class=o>.</span><span class=na>printStackTrace</span><span class=o>();</span>
-        <span class=o>}</span> <span class=k>catch</span> <span class=o>(</span><span class=nc>InterruptedException</span> <span class=n>e</span><span class=o>)</span> <span class=o>{</span>
+        <span class=o>}</span> <span class=k>catch</span> <span class=o>(</span><span class=n>InterruptedException</span> <span class=n>e</span><span class=o>)</span> <span class=o>{</span>
             <span class=n>e</span><span class=o>.</span><span class=na>printStackTrace</span><span class=o>();</span>
         <span class=o>}</span>
         <span class=k>return</span> <span class=kc>false</span><span class=o>;</span>

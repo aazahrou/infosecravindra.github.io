@@ -37,13 +37,13 @@
         <span class=nt>&lt;category</span> <span class=na>android:name=</span><span class=s>"android.intent.category.LAUNCHER"</span> <span class=nt>/&gt;</span>
     <span class=nt>&lt;/intent-filter&gt;</span>
 <span class=nt>&lt;/activity&gt;</span>
-</code></pre></div></div><h2 id=finally-lanuch-mainactivity-from-splashactivity>Finally Lanuch MainActivity from SplashActivity</h2><div class="highlighter-rouge language-java"><div class=highlight><pre class=highlight><code><span class=kd>public</span> <span class=kd>class</span> <span class=nc>SplashActivity</span> <span class=kd>extends</span> <span class=nc>AppCompatActivity</span> <span class=o>{</span>
+</code></pre></div></div><h2 id=finally-lanuch-mainactivity-from-splashactivity>Finally Lanuch MainActivity from SplashActivity</h2><div class="highlighter-rouge language-java"><div class=highlight><pre class=highlight><code><span class=kd>public</span> <span class=kd>class</span> <span class=nc>SplashActivity</span> <span class=kd>extends</span> <span class=n>AppCompatActivity</span> <span class=o>{</span>
 
     <span class=nd>@Override</span>
-    <span class=kd>protected</span> <span class=kt>void</span> <span class=nf>onCreate</span><span class=o>(</span><span class=nc>Bundle</span> <span class=n>savedInstanceState</span><span class=o>)</span> <span class=o>{</span>
+    <span class=kd>protected</span> <span class=kt>void</span> <span class=nf>onCreate</span><span class=o>(</span><span class=n>Bundle</span> <span class=n>savedInstanceState</span><span class=o>)</span> <span class=o>{</span>
         <span class=kd>super</span><span class=o>.</span><span class=na>onCreate</span><span class=o>(</span><span class=n>savedInstanceState</span><span class=o>);</span>
 
-        <span class=nc>Intent</span> <span class=n>intent</span> <span class=o>=</span> <span class=k>new</span> <span class=nc>Intent</span><span class=o>(</span><span class=k>this</span><span class=o>,</span> <span class=nc>MainActivity</span><span class=o>.</span><span class=na>class</span><span class=o>);</span>
+        <span class=n>Intent</span> <span class=n>intent</span> <span class=o>=</span> <span class=k>new</span> <span class=n>Intent</span><span class=o>(</span><span class=k>this</span><span class=o>,</span> <span class=n>MainActivity</span><span class=o>.</span><span class=na>class</span><span class=o>);</span>
         <span class=n>startActivity</span><span class=o>(</span><span class=n>intent</span><span class=o>);</span>
         <span class=n>finish</span><span class=o>();</span>
     <span class=o>}</span>

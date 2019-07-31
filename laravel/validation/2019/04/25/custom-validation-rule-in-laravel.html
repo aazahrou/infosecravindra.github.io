@@ -27,7 +27,7 @@
     <span class=k>return</span> <span class=s1>'The :attribute contains invalid characters.'</span><span class=p>;</span>
     <span class=c1>// :attribute refers to attribute name</span>
 <span class=p>}</span>
-</code></pre></div></div><h1 id=how-to-use-custom-validation-rule-in-laravel>How to Use Custom Validation Rule in Laravel</h1><p>We can use this validation is FormRequest, Controller or anywhere we need.</p><p>Let’s do it in FormRequest because that’s where we should keep our validation logic.</p><div class="highlighter-rouge language-php"><div class=highlight><pre class=highlight><code><span class=kn>use</span> <span class=nn>App\Rules\AlphaSpace</span><span class=p>;</span>
+</code></pre></div></div><h1 id=how-to-use-custom-validation-rule-in-laravel>How to Use Custom Validation Rule in Laravel</h1><p>We can use this validation is FormRequest, Controller or anywhere we need.</p><p>Let’s do it in FormRequest because that’s where we should keep our validation logic.</p><div class="highlighter-rouge language-php"><div class=highlight><pre class=highlight><code><span class=k>use</span> <span class=nx>App\Rules\AlphaSpace</span><span class=p>;</span>
 <span class=c1>// Import it</span>
 
 <span class=o>...</span>
