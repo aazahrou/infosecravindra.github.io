@@ -82,9 +82,8 @@ class AuthServiceProvider extends ServiceProvider
 - `php artisan passport:keys`
 - `php artisan passport:client`
 
-
-### Tinker Tricks
-## Truncate a table
-```php
-	User::truncate();
+## Echo SQL Query for all pending migrations
+```bash
+php artisan migrate --pretend
+</code></pre></div></div><h3 id=tinker-tricks>Tinker Tricks</h3><h2 id=truncate-a-table>Truncate a table</h2><div class="highlighter-rouge language-php"><div class=highlight><pre class=highlight><code>	<span class=nx>User</span><span class=o>::</span><span class=na>truncate</span><span class=p>();</span>
 </code></pre></div></div></div><hr><p><span>Original:&nbsp;<time datetime=2019-01-01>01 Jan 2019</time></span> <span class="clearfix float-right">Updated:&nbsp;<time datetime=2019-05-27>May 27, 2019</time></span></p><hr><div class=after-post-tags><ul class=tags><li><a href=/archives/cheatsheets_archive.html#laravel class=post-tag>laravel</a></li></ul></div><div class="row PageNavigation d-flex font-weight-bold justify-content-between"><a href=https://infosecravindra.github.io/cheatsheets/javascript_cheatsheet.html class="col-md-6 d-block prev">&laquo; JavaScript Cheatsheet</a> <a href=https://infosecravindra.github.io/cheatsheets/laravel-snippet.html class="col-md-6 d-block next text-lg-right">Laravel Snippets &raquo;</a><div class=clearfix></div></div></div></div></div><div class=container><div class="row justify-content-center mb-5" id=comments><div class="col-md-9 col-offset-1"><div id=disqus_thread></div><script src=/assets/js/disqus.js></script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript></div></div></div></div></div><footer class=footer><div class=container><div class="row text-dark"><div class="col-md-6 col-sm-6 text-center text-lg-left">Copyright © 2019 Ravindra Sisodia</div><div class="col-md-6 col-sm-6 text-center text-lg-right"><a href=https://www.wowthemes.net class=text-dark rel=noopener target=_blank>Mediumish Theme</a> by WowThemes.net</div></div></div></footer></div><script src=https://code.jquery.com/jquery-3.4.1.min.js crossorigin=anonymous integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="></script><script src=https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js defer crossorigin=anonymous integrity=sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM></script><script src=/assets/js/mediumish.js defer></script><script src=//infosecravindra-github-io.disqus.com/count.js defer id=dsq-count-scr></script><script src=/assets/js/service-worker-handler.js defer></script></body></html>
